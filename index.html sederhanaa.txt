@@ -1,0 +1,1034 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nurul Fatimah Syahra</title>
+
+
+    <!-- FONT ESTETIK -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family: "Montserrat", sans-serif;
+
+            color: #315b70;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    white 0%,
+                    transparent 22%
+                ),
+
+                radial-gradient(
+                    circle at 90% 20%,
+                    white 0%,
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 50% 100%,
+                    white 0%,
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #72c9f5,
+                    #a9ddf7,
+                    #dff4fc,
+                    #ffffff
+                );
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background:
+                rgba(255,255,255,0.75);
+
+            backdrop-filter:
+                blur(12px);
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.8);
+
+            padding: 18px 8%;
+        }
+
+
+        .nav-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+
+        .logo {
+
+            font-family:
+                "DM Serif Display",
+                serif;
+
+            font-size: 27px;
+
+            color: #28617c;
+        }
+
+
+        nav ul {
+
+            display: flex;
+
+            gap: 25px;
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+
+        nav a {
+
+            text-decoration: none;
+
+            color: #416e82;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+
+            color: #806fc1;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+
+            min-height: 600px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 80px 20px;
+        }
+
+
+        .hero-content {
+
+            max-width: 900px;
+        }
+
+
+        .hero h1 {
+
+            font-family:
+                "DM Serif Display",
+                serif;
+
+            font-size: 70px;
+
+            color: #24566f;
+
+            margin: 0 0 20px;
+
+            text-shadow:
+                3px 5px 12px
+                rgba(255,255,255,0.9);
+        }
+
+
+        .hero h2 {
+
+            font-size: 27px;
+
+            color: #4d7890;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero p {
+
+            font-size: 20px;
+
+            line-height: 1.8;
+
+            max-width: 700px;
+
+            margin: auto;
+
+            color: #527587;
+        }
+
+
+        .tombol {
+
+            display: inline-block;
+
+            margin-top: 35px;
+
+            padding: 16px 35px;
+
+            border-radius: 40px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #65c4ed,
+                    #9c95dc
+                );
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 800;
+
+            box-shadow:
+                0 10px 25px
+                rgba(70,120,150,0.25);
+
+            transition: 0.3s;
+        }
+
+
+        .tombol:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 15px 30px
+                rgba(70,120,150,0.35);
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        section {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 80px 25px;
+        }
+
+
+        .judul-section {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+
+        .judul-section h2 {
+
+            font-family:
+                "DM Serif Display",
+                serif;
+
+            font-size: 48px;
+
+            color: #28617c;
+
+            margin-bottom: 12px;
+        }
+
+
+        .judul-section p {
+
+            font-size: 18px;
+
+            color: #5c7d8c;
+        }
+
+
+        /* =========================
+           KARTU IDENTITAS
+        ========================= */
+
+        .grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 30px;
+        }
+
+
+        .card {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.9),
+                    rgba(225,244,252,0.9)
+                );
+
+            padding: 35px;
+
+            border-radius: 30px;
+
+            border:
+                2px solid
+                rgba(255,255,255,0.9);
+
+            box-shadow:
+                0 15px 35px
+                rgba(55,110,140,0.18);
+
+            transition:
+                0.35s;
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                0 22px 40px
+                rgba(55,110,140,0.28);
+        }
+
+
+        .card h3 {
+
+            font-size: 28px;
+
+            color: #28617c;
+
+            margin-top: 0;
+        }
+
+
+        .card p {
+
+            font-size: 20px;
+
+            line-height: 1.7;
+
+            color: #527587;
+        }
+
+
+        /* =========================
+           TENTANG SAYA
+        ========================= */
+
+        .about {
+
+            background:
+                rgba(255,255,255,0.45);
+
+            border-radius: 40px;
+
+            padding: 50px;
+
+            box-shadow:
+                inset 0 0 30px
+                rgba(255,255,255,0.6);
+        }
+
+
+        .about p {
+
+            font-size: 20px;
+
+            line-height: 1.9;
+
+            text-align: center;
+
+            color: #527587;
+        }
+
+
+        /* =========================
+           KEAHLIAN
+        ========================= */
+
+        .skills {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .skill {
+
+            text-align: center;
+
+            padding: 30px;
+
+            border-radius: 25px;
+
+            background:
+                rgba(255,255,255,0.75);
+
+            box-shadow:
+                0 10px 25px
+                rgba(55,110,140,0.15);
+        }
+
+
+        .skill h3 {
+
+            font-size: 22px;
+
+            color: #376b83;
+        }
+
+
+        .skill p {
+
+            color: #648595;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           AKTIVITAS
+        ========================= */
+
+        .aktivitas {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .aktivitas-card {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ffffff,
+                    #e5f6fd
+                );
+
+            padding: 30px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            box-shadow:
+                0 10px 25px
+                rgba(55,110,140,0.15);
+        }
+
+
+        .aktivitas-card h3 {
+
+            color: #396f88;
+
+            font-size: 23px;
+        }
+
+
+        .aktivitas-card p {
+
+            color: #648595;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           KONTAK
+        ========================= */
+
+        .contact {
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.8),
+                    rgba(211,238,249,0.85)
+                );
+
+            border-radius: 40px;
+
+            padding: 60px 30px;
+        }
+
+
+        .contact h2 {
+
+            font-family:
+                "DM Serif Display",
+                serif;
+
+            font-size: 48px;
+
+            color: #28617c;
+        }
+
+
+        .contact p {
+
+            font-size: 20px;
+
+            color: #527587;
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            text-align: center;
+
+            padding: 35px;
+
+            background:
+                rgba(255,255,255,0.65);
+
+            color: #5c7d8c;
+
+            font-weight: 600;
+
+            margin-top: 50px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 750px) {
+
+            nav ul {
+
+                display: none;
+            }
+
+
+            .hero h1 {
+
+                font-size: 45px;
+            }
+
+
+            .hero h2 {
+
+                font-size: 21px;
+            }
+
+
+            .grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .skills {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .aktivitas {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .judul-section h2 {
+
+                font-size: 38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <div class="logo">
+                Nurul Fatimah
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="#beranda">
+                        Beranda
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#profil">
+                        Profil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#keahlian">
+                        Keahlian
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#aktivitas">
+                        Aktivitas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#kontak">
+                        Kontak
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         BERANDA
+    ========================= -->
+
+    <div class="hero" id="beranda">
+
+        <div class="hero-content">
+
+            <h1>
+                My Personal Website
+            </h1>
+
+            <h2>
+                Selamat Datang di Ruang Kecil Saya
+            </h2>
+
+            <p>
+                Halo! Saya Nurul Fatimah Syahra.
+                Website ini merupakan ruang sederhana
+                untuk memperkenalkan diri, pendidikan,
+                aktivitas, dan hal-hal yang sedang saya pelajari.
+            </p>
+
+            <a href="#profil"
+               class="tombol">
+
+                Lihat Profil Saya
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         PROFIL
+    ========================= -->
+
+    <section id="profil">
+
+        <div class="judul-section">
+
+            <h2>
+                Profil Saya
+            </h2>
+
+            <p>
+                Sedikit informasi tentang saya
+            </p>
+
+        </div>
+
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>
+                    Nama
+                </h3>
+
+                <p>
+                    Nurul Fatimah Syahra
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    NIM
+                </h3>
+
+                <p>
+                    H021241064
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Program Studi
+                </h3>
+
+                <p>
+                    Fisika
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Mata Kuliah
+                </h3>
+
+                <p>
+                    Pemrograman Internet
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TENTANG SAYA
+    ========================= -->
+
+    <section>
+
+        <div class="judul-section">
+
+            <h2>
+                Tentang Saya
+            </h2>
+
+        </div>
+
+
+        <div class="about">
+
+            <p>
+
+                Saya adalah mahasiswa Program Studi Fisika
+                yang sedang mempelajari berbagai hal mengenai
+                ilmu fisika dan teknologi.
+                Melalui mata kuliah Pemrograman Internet,
+                saya belajar membuat dan mengembangkan
+                website menggunakan HTML dan CSS.
+
+                <br><br>
+
+                Website ini dibuat sebagai salah satu bentuk
+                pembelajaran dan latihan dalam memahami
+                dasar-dasar pemrograman web.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KEAHLIAN
+    ========================= -->
+
+    <section id="keahlian">
+
+        <div class="judul-section">
+
+            <h2>
+                Yang Sedang Saya Pelajari
+            </h2>
+
+            <p>
+                Beberapa bidang yang sedang saya kembangkan
+            </p>
+
+        </div>
+
+
+        <div class="skills">
+
+
+            <div class="skill">
+
+                <h3>
+                    HTML
+                </h3>
+
+                <p>
+                    Membuat struktur dasar
+                    sebuah halaman website.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    CSS
+                </h3>
+
+                <p>
+                    Mengatur warna, tata letak,
+                    font, dan tampilan website.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    Pemrograman
+                </h3>
+
+                <p>
+                    Mempelajari dasar logika
+                    dan pemrograman komputer.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         AKTIVITAS
+    ========================= -->
+
+    <section id="aktivitas">
+
+        <div class="judul-section">
+
+            <h2>
+                Aktivitas
+            </h2>
+
+            <p>
+                Hal-hal yang sedang saya lakukan
+            </p>
+
+        </div>
+
+
+        <div class="aktivitas">
+
+
+            <div class="aktivitas-card">
+
+                <h3>
+                    📚 Perkuliahan
+                </h3>
+
+                <p>
+                    Mengikuti kegiatan perkuliahan
+                    dan mengerjakan berbagai tugas akademik.
+                </p>
+
+            </div>
+
+
+            <div class="aktivitas-card">
+
+                <h3>
+                    💻 Belajar Web
+                </h3>
+
+                <p>
+                    Mempelajari HTML, CSS,
+                    dan dasar-dasar website.
+                </p>
+
+            </div>
+
+
+            <div class="aktivitas-card">
+
+                <h3>
+                    🔬 Fisika
+                </h3>
+
+                <p>
+                    Mempelajari konsep-konsep
+                    fisika dan penerapannya.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KONTAK
+    ========================= -->
+
+    <section id="kontak">
+
+        <div class="contact">
+
+            <h2>
+                Mari Terhubung
+            </h2>
+
+            <p>
+                Terima kasih sudah mengunjungi
+                website pribadi saya.
+
+                <br><br>
+
+                Website ini masih dalam tahap
+                pengembangan dan akan terus saya
+                kembangkan dengan hal-hal baru.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        © 2026 Nurul Fatimah Syahra
+        <br><br>
+        Pemrograman Internet
+
+    </footer>
+
+
+</body>
+
+</html>
+```
